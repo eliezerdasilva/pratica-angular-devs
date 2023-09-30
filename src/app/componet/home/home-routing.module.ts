@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './componet/home/home.component';
+import { HomeComponent } from './home.component';
 // Aqui colocamos 
 const routes: Routes = [
-  // Criar um rota - objeto
-  // 1- zerar rotas
-  {path:'',pathMatch: 'full', redirectTo:'home'},
-  // 2 - Criar a rota de home m
+
   {path: 'home', component:HomeComponent}
 ];
 
@@ -15,4 +12,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class HomeRoutingModule { }

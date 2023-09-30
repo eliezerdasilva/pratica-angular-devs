@@ -1,5 +1,16 @@
-*{
-    background-color: antiquewhite;
-    height: 100vh;
-    
+h1{
+    background-color: black;
+    color: white;
+}
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button{
+    background-color: bisque;
+    border-radius:16px;
+    width: 100px;
+    height: 50;
+}
+button:hover{
+    background-color: rgb(199, 158, 108);
 }
