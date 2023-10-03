@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 @Component({
-  //seletor
+  // fórmula app - nomeComponente
+  // seletor = app-header
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  public bntInicio : String = 'Inicio';
+  public bntInicio: string = 'Inicio'
+  public bntCadastras: string = 'Cadastrar produto'
 
   constructor() { }
 
