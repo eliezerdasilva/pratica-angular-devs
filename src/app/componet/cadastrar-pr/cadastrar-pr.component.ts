@@ -8,8 +8,9 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class CadastrarProdutoComponent implements OnInit {
   // Declarar o formulario - tipo FormGroup
-  public formularioProduto: FormGroup
+  public formularioProduto: FormGroup 
   public mostrar: boolean = true;
+  public productOptions : string [] = ['CARNE','REFRIGERANTE']
   // Autowired
   // Injetando bibliotecas
   constructor(private formBuilder: FormBuilder) { }

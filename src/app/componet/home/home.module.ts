@@ -5,6 +5,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { CadastrarProdutoModule } from '../cadastrar-pr/cadastrar-pr.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -13,6 +14,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
+    HomeRoutingModule,
+    MatButtonModule
   ]
 })
 export class HomeModule { }

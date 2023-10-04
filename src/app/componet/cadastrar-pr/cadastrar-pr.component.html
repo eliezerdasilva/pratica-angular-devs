@@ -6,17 +6,19 @@
     <input type="text" formControlName="constPrice" />
     <input type="text" formControlName="code" />
     <input type="number" formControlName="salePrice" />
-    <select formControlName="productType">
-      <option>DESSERT</option>
-      <option>DESSERT</option>
-      <option>SANK</option>
+    
+    <select  >
+      <option *ngFor="let item of productOptions">{{item}}</option>
+  
     </select>
-
+    <button mat-button color="primary">Primary</button>
     <input type="number" formControlName="preparetionTime" />
-
-    <button type="submit" (click)="enviarFormulario()">Salva</button>
+    <button mat-button color="primary" type="submit" (click)="enviarFormulario()">Salva</button>
+  
     <button type="submit" (click)="ocultarSelect()" >Ocultar</button>
   </form>
+  
 </div>
+
 <h5>Condição do meu ngIf: {{mostrar}}</h5>
 <h5 *ngIf="mostrar == true">Teste com ngIF</h5>

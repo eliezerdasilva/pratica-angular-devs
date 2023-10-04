@@ -4,12 +4,14 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
- constructor(){}
-  ngOnInit(): void {
-  }
+  //criar um vetor(Objeto)
+  public listaDeTarefas: string[] = ['Cozinhar', 'ler'];
 
+  
 
+  constructor() {}
+  ngOnInit(): void {}
 }

@@ -4,7 +4,7 @@ import { HomeComponent } from './home.component';
 // Aqui colocamos 
 const routes: Routes = [
 
-  {path: 'home', component:HomeComponent}
+  {path: '', component:HomeComponent}
 ];
 
 //principal arquivo de roteamento
